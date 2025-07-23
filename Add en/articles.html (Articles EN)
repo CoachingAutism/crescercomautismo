@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Articles</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="artigos">
+  <header>
+    <img src="../infinito.png" class="logo" alt="Crescer com Autismo logo">
+    <span class="site-title">Crescer com Autismo</span>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="who-am-i.html">About me</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="lang"><span class="active">GB</span> | <a href="../artigos.html">PT</a></li>
+    </ul></nav>
+  </header>
+
+  <main>
+    <h1>Articles about Autism</h1>
+
+    <section>
+      <h2>1. The Challenges of Transitioning to Adulthood</h2>
+      <p>For autistic young people, moving from adolescence into adult life is one of the toughest moments. Many families feel lost, not knowing how to support their children in this new stage. It’s essential to offer guidance, accessible services and realistic expectations for independence.</p>
+    </section>
+
+    <section>
+      <h2>2. Why Early Intervention Matters</h2>
+      <p>Early intervention makes all the difference in the development of children on the spectrum. The earlier the support, the more we can boost communication, autonomy and quality of life. Identifying needs and acting with evidence-based strategies brings long-term benefits for the whole family.</p>
+    </section>
+
+    <section>
+      <h2>3. How Families Can Overcome Stigma</h2>
+      <p>Social stigma is still a big obstacle. Lack of information and understanding creates isolation in communities, schools and workplaces. Families can face this by seeking reliable information, building support networks and promoting awareness wherever they are. Inclusion starts with empathy.</p>
+    </section>
+  </main>
+
+  <footer>© 2025 Crescer com Autismo | Melanie Mata</footer>
+</body>
+</html
