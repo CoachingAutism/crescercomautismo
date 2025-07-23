@@ -1,57 +1,127 @@
+/* =========================================================
+   STYLE.CSS  –  Crescer com Autismo / Coaching for Life
+   ========================================================= */
 
-body { background-color: #1e1e1e; color: #ffffff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
-header, footer { background-color: #000; color: white; text-align: center; padding: 20px; }
-nav ul { list-style: none; display: flex; justify-content: center; padding: 0; margin: 10px 0; }
-nav ul li { margin: 0 15px; }
-nav ul li a { color: white; text-decoration: none; font-weight: bold; }
-main { max-width: 1000px; margin: auto; padding: 40px 20px; }
-img.logo { max-height: 50px; vertical-align: middle; }
+/* ====== BASE ====== */
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#ffffff;
+  background-color:#1e1e1e;
+}
+
 /* ====== CORES POR PÁGINA ====== */
-/* substitua pelos códigos que já usa em cada página */
-body.home      { background-color: #2e1a47; } /* index.html */
-body.quem      { background-color: #123456; } /* quem-sou-eu.html */
-body.artigos   { background-color: #1a3d2f; } /* artigos.html */
-body.educacao  { background-color: #0d2b5c; } /* se tiver outro código, troque */
-body.contato   { background-color: #1a1a1a; } /* idem */
+body.home    { background-color:#2e1a47; }
+body.quem    { background-color:#123456; }
+body.artigos { background-color:#1a3d2f; }
+body.educacao{ background-color:#0d2b69; }
+body.contato { background-color:#1a1a1a; }
+
+/* ====== LAYOUT GERAL ====== */
+header, footer{
+  background-color:#000;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+main{
+  max-width:1000px;
+  margin:40px auto;
+  padding:0 20px 40px;
+}
 
 /* ====== LOGO E TÍTULO ====== */
 .logo{
   height:55px;
-  vertical-align: middle;
+  vertical-align:middle;
 }
+
 .site-title{
   font-size:18px;
   font-weight:600;
   margin-left:8px;
   color:#fff;
+  vertical-align:middle;
 }
 
 /* ====== MENU ====== */
 nav ul{
   list-style:none;
   padding:0;
-  margin:0;
+  margin:10px 0 0;
   display:flex;
   gap:18px;
+  justify-content:center;
+  flex-wrap:wrap;
 }
+
 nav a{
   color:#fff;
   text-decoration:none;
-  font-weight:500;
+  font-weight:bold;
+  transition:opacity .2s;
 }
+
 nav a:hover{
   text-decoration:underline;
+  opacity:.8;
+}
+
+.lang{
+  margin-left:8px;
+  font-weight:normal;
+}
+.lang .active{
+  font-weight:bold;
+  text-decoration:underline;
+}
+
+/* ====== TÍTULOS ====== */
+h1{
+  font-size:28px;
+  margin:20px 0 16px;
+  color:#fff;
+}
+
+h2{
+  font-size:22px;
+  margin:32px 0 12px;
+  line-height:1.3;
+}
+
+/* ====== TEXTO ====== */
+main p{
+  text-align:justify;
+  line-height:1.6;
+  margin:0 0 18px;
+}
+
+ul, ol{
+  margin:0 0 18px 24px;
+  line-height:1.5;
+}
+
+section{
+  margin-bottom:40px;
 }
 
 /* ====== FOTO DA BIO ====== */
 .bio-foto{
   float:right;
-  max-width:210px;   /* ajuste aqui se quiser */
+  max-width:210px;
   width:100%;
   height:auto;
   margin:10px 0 10px 20px;
   border-radius:12px;
 }
+
+/* ====== RESPONSIVO ====== */
 @media (max-width:600px){
   .bio-foto{
     float:none;
@@ -59,19 +129,22 @@ nav a:hover{
     margin:0 auto 20px;
     max-width:70%;
   }
+
+  nav ul{
+    gap:12px;
+  }
+
+  h1{
+    font-size:24px;
+  }
 }
 
-/* ====== TÍTULO PRINCIPAL (h1) ====== */
-h1{
-  font-size:28px;
-  margin:20px 0 10px;
-  color:#fff;
-}
-
-/* Rodapé */
+/* ====== RODAPÉ ====== */
 footer{
   text-align:center;
   margin:40px 0 10px;
   color:#ccc;
   font-size:14px;
 }
+
+
